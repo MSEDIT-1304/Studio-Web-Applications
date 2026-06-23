@@ -1,1 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon parcours d'auteure - M.S Édit</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<nav class="navbar">
+    <a href="/">Accueil</a>
+    <a href="/services">Mes services</a>
+    <a href="/parcours">Mon parcours d'auteure</a>
+    <a href="/contact">Contact</a>
+    <a href="/panier">Panier</a>
+</nav>
+
+<img src="{{ url_for('static', filename='images/banniere-msedit.png') }}" alt="Bannière M.S Édit" class="banniere">
+
+<div class="contenu">
+
+    <img src="{{ url_for('static', filename='images/logo-msedit.png') }}" alt="Logo M.S Édit" class="logo">
+
+    <h1>Mon parcours d'auteure</h1>
+
+    <p>
+        Auteure publiée de plusieurs ouvrages, j'ai traversé les différentes étapes
+        de l'écriture, de l'édition et de la publication.
+    </p>
+
+    <p>
+        Cette expérience me permet aujourd'hui d'accompagner les écrivains dans leurs
+        projets avec bienveillance, professionnalisme et réalisme.
+    </p>
+
+    <p>
+        J'ai également créé moi-même les couvertures de mes ouvrages, ce qui me permet
+        aujourd'hui de proposer un service de création graphique adapté aux auteurs
+        autoédités.
+    </p>
+
+    <img src="{{ url_for('static', filename='images/ouvrages-msedit.jpg') }}" alt="Mes ouvrages" class="ouvrages">
+
+</div>
+
+</body>
+</html>
