@@ -1,1 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M.S Édit - Services aux écrivains</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    
+<nav class="navbar">
+    <a href="/services">Mes services</a>
+    <a href="/parcours">Mon parcours d'auteure</a>
+    <a href="/contact">Contact</a>
+    <a href="/panier">Panier</a>
+</nav>
+    
+    <img src="{{ url_for('static', filename='images/banniere-msedit.png') }}" alt="Bannière M.S Édit" class="banniere">
+
+    <div class="contenu" id="accueil">
+
+        <img src="{{ url_for('static', filename='images/logo-msedit.png') }}" alt="Logo M.S Édit" class="logo">
+
+       
+
+        <h2>Services aux écrivains</h2>
+
+        <p class="slogan">
+        Parce qu'aucun auteur ne devrait avancer seul.
+    </p>
+
+<section class="presentation">
+
+    <h2>Qui suis-je ?</h2>
+
+    <p>
+        Écrivaine d'origine corse, l'écriture est ma passion et mon exutoire.
+        J'ai pu refermer les tiroirs du passé grâce à ma première autobiographie.
+        Cette expérience m'a permis de comprendre une chose essentielle :
+        on ne peut pas changer le passé, mais on peut toujours avancer.
+    </p>
+
+    <p>
+        Au fil des années, j'ai écrit plusieurs ouvrages et accompagné des auteurs
+        dans leur parcours. J'ai créé M.S Édit afin d'aider les écrivains à
+        concrétiser leurs projets et à valoriser leur travail.
+    </p>
+
+</section>
+
+</div>
+</body>
+
+</html>
