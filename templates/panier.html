@@ -1,1 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Panier - M.S Édit</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
 
+<body>
+
+<nav class="navbar">
+    <a href="/">Accueil</a>
+    <a href="/services">Mes services</a>
+    <a href="/parcours">Mon parcours d'auteure</a>
+    <a href="/contact">Contact</a>
+    <a href="/panier">Panier</a>
+</nav>
+
+<img src="{{ url_for('static', filename='images/banniere-msedit.png') }}" alt="Bannière" class="banniere">
+
+<div class="contenu">
+
+    <img src="{{ url_for('static', filename='images/logo-msedit.png') }}" alt="Logo" class="logo">
+
+    <h2>Mon panier</h2>
+
+    <div id="panier-contenu">
+
+{% if articles %}
+
+    <ul>
+
+    {% for article in articles %}
+
+        <li>
+            {{ article.nom }} - {{ article.prix }} €
+
+            <a href="/supprimer/{{ article.code }}">
+                Supprimer
+            </a>
+
+        </li>
+
+    {% endfor %}
+
+    </ul>
+
+{% else %}
+
+    <p>Votre panier est vide.</p>
+
+{% endif %}
+
+</div>
+
+    <h3>Total : {{ total }} €</h3>
+
+    <a href="/payer">
+    <button>Payer avec Stripe</button>
+</a>
+
+</div>
+
+</body>
+</html>
