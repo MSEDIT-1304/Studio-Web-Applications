@@ -1,1 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes services - M.S Édit</title>
 
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    
+<nav class="navbar">
+    <a href="/">Accueil</a>
+    <a href="/services">Mes services</a>
+    <a href="/parcours">Mon parcours d'auteure</a>
+    <a href="/contact">Contact</a>
+    <a href="/panier">Panier</a>
+</nav>
+    
+    <img src="{{ url_for('static', filename='images/banniere-msedit.png') }}" alt="Bannière M.S Édit" class="banniere">
+
+    <div class="contenu">
+
+        <img src="{{ url_for('static', filename='images/logo-msedit.png') }}" alt="Logo M.S Édit" class="logo">
+
+        
+
+        <h2>Mes services</h2>
+        
+
+<section class="services">
+
+<div class="service">
+
+<h3>Correction littéraire</h3>
+
+<p>
+    Chaque correction comprend :
+</p>
+
+<p>
+    ✓ Correction orthographique<br>
+    ✓ Correction grammaticale<br>
+    ✓ Correction de la ponctuation<br>
+    ✓ Correction typographique<br>
+    ✓ Critique littéraire offerte
+</p>
+<h4>Tarifs</h4>
+
+<p><a href="/ajouter/correction150">
+    <button>Ajouter au panier</button>
+</a>
+150 pages A5 maximum : 150 € TTC<br>
+<a href="/ajouter/correction220">
+    <button>Ajouter au panier</button>
+</a>
+    
+250 pages A5 maximum : 220 € TTC<br>
+<a href="/ajouter/correction300">
+    <button>Ajouter au panier</button>
+</a>
+    
+400 pages A5 maximum : 300 € TTC<br>
+<a href="/ajouter/correction420">
+    <button>Ajouter au panier</button>
+</a>
+    
+500 pages A5 maximum : 420 € TTC<br>
+
+    
+
+    Au-delà : devis personnalisé
+</p>
+    
+</div>
+
+<div class="service">
+
+<h3>Création de couvertures</h3>
+
+<p>
+Création de couvertures pour livre papier et numérique.
+</p>
+
+<p>
+✓ Couverture professionnelle<br>
+✓ Respect des dimensions Amazon KDP<br>
+✓ Version papier et/ou numérique<br>
+✓ Modifications selon vos remarques
+</p>
+
+<h4>Formule Standard</h4>
+
+<p>
+3 propositions maximum<br><br>
+    
+<a href="/ajouter/couv80">
+    <button>Ajouter au panier</button>
+</a>
+Couverture seule : 80 €<br>
+<a href="/ajouter/couv120">
+    <button>Ajouter au panier</button>
+</a>
+    
+Couverture + 4e de couverture : 120 €<br>
+<a href="/ajouter/couv170">
+    <button>Ajouter au panier</button>
+</a>
+    
+Couverture + 4e + résumé : 170 €
+
+</p>
+
+<h4>Formule Premium</h4>
+
+<p>
+Propositions illimitées<br><br>
+
+<a href="/ajouter/premium160">
+    <button>Ajouter au panier</button>
+</a>
+Couverture seule : 160 €<br>
+<a href="/ajouter/premium200">
+    <button>Ajouter au panier</button>
+</a>
+    
+Couverture + 4e de couverture : 200 €<br>
+<a href="/ajouter/premium250">
+    <button>Ajouter au panier</button>
+</a>
+    
+Couverture + 4e + résumé : 250 €
+
+
+</p>
+
+</div>
+<div class="service">
+
+<h3>💻 Création de sites web</h3>
+
+<h4>Site vitrine Essentiel – 550 € TTC</h4>
+
+<a href="/ajouter/site550">
+    <button>Ajouter au panier</button>
+</a>
+
+<p>
+Comprend :<br><br>
+
+✓ Jusqu'à 5 pages<br>
+✓ Design personnalisé<br>
+✓ Version mobile et ordinateur<br>
+✓ Formulaire de contact<br>
+✓ Intégration du logo<br>
+✓ Mise en ligne
+</p>
+
+<h4>Site vitrine Premium – 750 € TTC</h4>
+
+<a href="/ajouter/site750">
+    <button>Ajouter au panier</button>
+</a>
+
+<p>
+Comprend :<br><br>
+
+✓ Toutes les fonctionnalités de l'offre Essentiel<br>
+✓ Pages supplémentaires<br>
+✓ Galerie photos<br>
+✓ Blog / actualités<br>
+✓ Fonctionnalités avancées selon les besoins
+</p>
+
+<h4>Boutique en ligne</h4>
+
+<p>
+Sur devis
+</p>
+
+<h4>Hébergement et services après création du site – 30 € TTC / mois</h4>
+
+<p>
+✓ Hébergement<br>
+✓ Maintenance<br>
+✓ Modifications mineures<br>
+✓ Ajouts de contenu<br>
+✓ Mises à jour<br>
+✓ Assistance par e-mail
+</p>
+
+</div>
+
+</section>
+</div>
+</body>
+</html>
