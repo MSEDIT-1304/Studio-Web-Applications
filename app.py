@@ -2,6 +2,12 @@ from flask import Flask, render_template, request, redirect, session
 import stripe
 import os
 
+st.set_page_config(
+    page_title="Cot Auto",
+    page_icon="logo_veliora.png",
+    layout="centered"
+)
+
 app = Flask(__name__)
 app.secret_key = "msedit_panier_2026"
 stripe.api_key = os.environ.get("STRIPE_SECRET_KEY")
