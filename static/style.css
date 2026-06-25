@@ -109,13 +109,6 @@ h2 {
     padding: 20px;
 }
 
-.ouvrages {
-    width: 220px;
-    height: auto;
-    border-radius: 10px;
-    margin: 20px auto;
-    display: block;
-}
 .contact {
     max-width: 800px;
     margin: 60px auto;
@@ -172,7 +165,6 @@ details[open] summary {
 }
 #accueil,
 #services,
-#ouvrages,
 #contact {
     scroll-margin-top: 150px;
 }
@@ -200,11 +192,6 @@ details[open] summary {
 
     .logo {
         width: 90px;
-    }
-
-    .ouvrages {
-        width: 150px;
-        height: auto;
     }
 
     h1 {
