@@ -91,6 +91,7 @@ def payer():
     for produit in panier:
         if produit in PRIX:
             total += PRIX[produit][1]
+            
 
     if total == 0:
         return redirect("/panier")
