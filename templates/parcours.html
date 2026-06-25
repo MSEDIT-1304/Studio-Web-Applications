@@ -1,25 +1,58 @@
-<h1>Mon parcours professionnel</h1>
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon parcours professionnel - Studio Web & Applications</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<nav class="navbar">
+    <a href="/">Accueil</a>
+    <a href="/services">Mes services</a>
+    <a href="/parcours">Mon parcours professionnel</a>
+    <a href="/contact">Contact</a>
+    <a href="/panier">Panier</a>
+</nav>
+
+<img src="{{ url_for('static', filename='images/banniere_msedit.png') }}" class="banniere">
+
+<div class="contenu">
+
+<img src="{{ url_for('static', filename='images/logo-msedit.png') }}" class="logo">
+
+<h2>Mon parcours professionnel</h2>
+
+<section class="presentation">
 
 <p>
-
-Depuis plusieurs années, j'accompagne les indépendants, artisans, commerçants et petites entreprises dans leur développement numérique.
-
+Passionnée par l'informatique et les nouvelles technologies, j'accompagne depuis plusieurs années les indépendants, artisans, commerçants et petites entreprises dans leur développement numérique.
 </p>
 
 <p>
-
-Mon parcours a débuté dans les services administratifs aux entreprises avant de me spécialiser dans la création de sites internet professionnels.
-
+Mon activité a débuté dans les services administratifs aux entreprises. Cette expérience m'a permis de comprendre les besoins concrets des professionnels et les difficultés rencontrées dans la gestion quotidienne de leur activité.
 </p>
 
 <p>
-
-Au fil des projets, j'ai développé des applications web, des applications mobiles ainsi que des outils métier entièrement personnalisés.
-
+J'ai ensuite développé mes compétences dans la création de sites internet professionnels, puis dans le développement d'applications web et mobiles entièrement personnalisées.
 </p>
 
 <p>
-
-Aujourd'hui, je mets cette expérience au service de mes clients afin de leur proposer des solutions simples, modernes et efficaces, adaptées à leurs besoins.
-
+Aujourd'hui, je conçois également des solutions d'automatisation et des outils intégrant l'intelligence artificielle afin de simplifier le travail de mes clients et de leur faire gagner un temps précieux.
 </p>
+
+<p>
+Chaque projet est conçu sur mesure, avec un seul objectif : proposer des outils simples, performants et parfaitement adaptés aux besoins de chaque entreprise.
+</p>
+
+</section>
+
+</div>
+
+</body>
+
+</html>
