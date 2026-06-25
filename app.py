@@ -2,11 +2,6 @@ from flask import Flask, render_template, request, redirect, session
 import stripe
 import os
 
-st.set_page_config(
-    page_title="Studio-Web-Applications",
-    page_icon="logo_msedit.png",
-    layout="centered"
-)
 
 app = Flask(__name__)
 app.secret_key = "msedit_panier_2026"
