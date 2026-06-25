@@ -3,8 +3,8 @@ import stripe
 import os
 
 st.set_page_config(
-    page_title="Cot Auto",
-    page_icon="logo_veliora.png",
+    page_title="Studio-Web-Applications",
+    page_icon="logo_msedit.png",
     layout="centered"
 )
 
