@@ -249,7 +249,7 @@ details[open] summary {
     /* Boutons Ajouter au panier */
 
 button {
-    background: red;
+    background: linear-gradient(to bottom, #e5c55a, #b8860b);
     color: #000;
     border: 2px solid #d4af37;
     border-radius: 8px;
@@ -263,7 +263,7 @@ button {
 }
 
 button:hover {
-    background: #f5d76e;
+    background: linear-gradient(to bottom, #f7df87, #c99700);
     color: #000;
     transform: scale(1.05);
     box-shadow: 0 0 15px rgba(212,175,55,0.8);
