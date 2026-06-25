@@ -6,51 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="color-scheme" content="dark">
     <meta name="theme-color" content="#000000">
-    
-    <title>Studio - Web & Applications</title>
+
+    <title>Studio Web & Applications</title>
 
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 
 <body>
-    
+
 <nav class="navbar">
     <a href="/services">Mes services</a>
     <a href="/parcours">Mon parcours professionnel</a>
     <a href="/contact">Contact</a>
     <a href="/panier">Panier</a>
 </nav>
-    
-    <img src="{{ url_for('static', filename='images/banniere_msedit.png') }}" alt="Bannière M.S Édit" class="banniere">
 
-    <div class="contenu" id="accueil">
+<img src="{{ url_for('static', filename='images/banniere_msedit.png') }}" alt="Bannière Studio Web" class="banniere">
 
-        <h2>Services aux professionnels</h2>
+<div class="contenu" id="accueil">
 
-        <p class="slogan">
-        Parce qu'aucun indépendant ne devrait avancer seul.
+    <img src="{{ url_for('static', filename='images/logo-msedit.png') }}" alt="Logo Studio Web" class="logo">
+
+    <h2>Studio Web & Applications</h2>
+
+    <p class="slogan">
+        Des solutions numériques pensées pour développer votre activité.
     </p>
 
 <section class="presentation">
 
-    
-    <p>
-        Studio Web & Applications
+<h2>Qui suis-je ?</h2>
 
-        J'accompagne les indépendants, entrepreneurs et petites entreprises dans leur 
-        développement numérique.
-        Je conçois des sites internet professionnels, des applications mobiles et des outils métier 
-        sur mesure adaptés aux besoins réels de votre activité.
-        
-        Que vous souhaitiez renforcer votre présence en ligne, automatiser certaines tâches 
-        ou disposer d'une application spécifique à votre métier, 
-        nous développons des solutions simples, efficaces et accessibles.
-            
-    </p>
+<p>
+Développeuse indépendante, j'accompagne les artisans, commerçants,
+professions libérales et petites entreprises dans leur transformation
+numérique.
+
+Je conçois des sites internet professionnels, des applications web,
+des applications mobiles ainsi que des outils métiers adaptés à chaque activité.
+</p>
+
+<p>
+Mon objectif est de créer des solutions simples, modernes et efficaces,
+permettant à mes clients de gagner du temps, d'améliorer leur image
+et de développer leur entreprise grâce à des outils numériques sur mesure.
+</p>
 
 </section>
 
 </div>
+
 </body>
 
 </html>
