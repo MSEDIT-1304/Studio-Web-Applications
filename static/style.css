@@ -246,3 +246,29 @@ details[open] summary {
 .contact-form button:hover{
     background:white;
 }
+    /* Boutons Ajouter au panier */
+
+button {
+    background: linear-gradient(to bottom, #d4af37, #a67c00);
+    color: #000;
+    border: 2px solid #d4af37;
+    border-radius: 8px;
+    padding: 10px 22px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 10px 0 20px 0;
+    box-shadow: 0 0 8px rgba(212,175,55,0.4);
+}
+
+button:hover {
+    background: #f5d76e;
+    color: #000;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(212,175,55,0.8);
+}
+
+button:active {
+    transform: scale(0.97);
+}
