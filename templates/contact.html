@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - M.S Édit</title>
+    <title>Contact - Studio Web & Applications</title>
 
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
@@ -19,39 +19,57 @@
     <a href="/panier">Panier</a>
 </nav>
 
-<img src="{{ url_for('static', filename='images/banniere-msedit.png') }}" alt="Bannière M.S Édit" class="banniere">
+<img src="{{ url_for('static', filename='images/banniere_msedit.png') }}" class="banniere">
 
 <div class="contenu">
 
-    <img src="{{ url_for('static', filename='images/logo-msedit.png') }}" alt="Logo M.S Édit" class="logo">
+<img src="{{ url_for('static', filename='images/logo-msedit.png') }}" class="logo">
 
-    <h1>Contact</h1>
+<h2>Contact</h2>
 
-    <p>
-        Vous souhaitez un devis ou un accompagnement pour votre projet ?
-    </p>
+<p>
+Vous souhaitez créer un site internet, une application ou obtenir un devis ?
+</p>
 
-    <form class="contact-form">
+<form class="contact-form" method="post">
 
-        <label>Nom</label><br>
-        <input type="text" name="nom"><br><br>
+<p>
+<label><strong>Nom et prénom</strong></label><br>
+<input type="text" name="nom" required>
+</p>
 
-        <label>Projet</label><br>
-        <input type="text" name="projet"><br><br>
+<p>
+<label><strong>Entreprise (facultatif)</strong></label><br>
+<input type="text" name="entreprise">
+</p>
 
-        <label>Adresse mail</label><br>
-        <input type="email" name="email"><br><br>
+<p>
+<label><strong>Adresse e-mail</strong></label><br>
+<input type="email" name="email" required>
+</p>
 
-    </form>
+<p>
+<label><strong>Téléphone</strong></label><br>
+<input type="tel" name="telephone">
+</p>
 
-    <p>
-        📧 ms.edit.mg@gmail.com
-    </p>
+<p>
+<label><strong>Votre projet</strong></label><br>
+<textarea name="message" rows="8" required></textarea>
+</p>
 
-    <p>
-       
+<p>
+<button type="submit">Envoyer ma demande</button>
+</p>
+
+</form>
+
+<p>
+📧 contact@studioweb.fr
+</p>
+
 </div>
 
-
 </body>
+
 </html>
