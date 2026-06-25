@@ -249,7 +249,7 @@ details[open] summary {
     /* Boutons Ajouter au panier */
 
 button {
-    background: linear-gradient(to bottom, #d4af37, #a67c00);
+    background: red;
     color: #000;
     border: 2px solid #d4af37;
     border-radius: 8px;
