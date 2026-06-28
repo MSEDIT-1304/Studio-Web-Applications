@@ -16,7 +16,9 @@ body {
 }
 
 .contenu {
-    margin-left: 240px;
+    margin-left: 220px;
+    width: calc(100% - 220px);
+    box-sizing: border-box;
     text-align: center;
     padding: 10px 20px;
 }
