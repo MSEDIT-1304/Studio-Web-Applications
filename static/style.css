@@ -8,11 +8,11 @@ body {
 }
 
 .banniere {
-    width: 1050px;
-    max-width: 100%;
-    height: auto;
     display: block;
-    margin: auto;
+    width: 1050px;
+    max-width: calc(100% - 240px);
+    height: auto;
+    margin: 0 0 20px 240px;
 }
 
 .contenu {
