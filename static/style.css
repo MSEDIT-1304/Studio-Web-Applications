@@ -172,15 +172,13 @@ details[open] summary {
 
 @media screen and (max-width: 768px) {
 
-    .navbar {
-        position: relative;
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        padding-top: 10px;
-    }
-
+    .navbar{
+    flex-direction:row;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:12px 20px;
+    padding:12px;
+}
     .contenu {
         margin-left: 0;
         padding: 10px;
