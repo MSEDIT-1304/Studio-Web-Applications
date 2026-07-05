@@ -364,7 +364,7 @@ button{
     box-shadow:0 2px 8px rgba(0,0,0,.30);
     margin:10px auto 18px auto;
     display:block;
-    min-width:155px;
+    min-width:145px;
 
 }
 button:hover{
