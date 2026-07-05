@@ -276,14 +276,15 @@ details[open] summary {
         flex-direction:row;
         justify-content:space-evenly;
         align-items:center;
-        flex-wrap:nowrap;
+        flex-wrap:wrap;
     
-        gap:8px;
-        padding:8px 10px;
+        gap:4px 8px;
+        padding:6px;
     }
     .navbar a{
-        padding:8px 12px;
-        font-size:13px;
+        padding:6px 10px;
+        font-size:12px;
+        line-height:1.2;
         white-space:nowrap;
     }
     .contenu {
