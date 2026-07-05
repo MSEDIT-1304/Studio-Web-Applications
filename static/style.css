@@ -276,10 +276,10 @@ details[open] summary {
     flex-direction:row;
     justify-content:center;
     align-items:center;
-    flex-wrap:wrap;
+    flex-wrap:nowrap;
 
-    gap:6px 10px;
-    padding:4px;
+    gap:8px;
+    padding:8px 10px;
 }
     .contenu {
         margin-left: 0;
