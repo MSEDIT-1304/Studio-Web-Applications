@@ -217,8 +217,10 @@ details[open] summary {
 .offre h4{
     text-align:center;
     color:#d7b66a;
-    font-size:24px;
-    margin:0;
+    font-size:20px;
+    font-weight:700;
+    margin:0 0 8px;
+    letter-spacing:0.2px;
 }
 
 .prix{
@@ -373,4 +375,8 @@ button:active{
 }
 .offres{
     grid-template-columns:1fr;
+}
+.offres h3{
+    font-size:26px;
+    line-height:1.3;
 }
