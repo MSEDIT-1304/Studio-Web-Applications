@@ -398,6 +398,19 @@ details[open] summary {
     resize:vertical;
 }
 
+.contact-form input:focus,
+.contact-form textarea:focus{
+
+    outline:none;
+
+    border-color:#d7b66a;
+
+    box-shadow:0 0 14px rgba(200,162,74,.22);
+
+    transition:.25s;
+
+}
+
 
     /* ===== Boutons ===== */
 
