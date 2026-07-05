@@ -7,17 +7,18 @@ body {
     font-size: 13px;
 }
 
-.banniere {
-    width: 1050px;
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: auto;
-}
 .banniere{
-    max-height:190px;
-    object-fit:contain;
+
+    width:900px;
+
+    max-width:100%;
+
+    display:block;
+
+    margin:10px auto 0 auto;
+
 }
+
 
 .contenu {
     margin-left: 240px;
