@@ -14,6 +14,10 @@ body {
     display: block;
     margin: auto;
 }
+.banniere{
+    max-height:190px;
+    object-fit:contain;
+}
 
 .contenu {
     margin-left: 240px;
