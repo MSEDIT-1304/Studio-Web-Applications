@@ -376,7 +376,7 @@ button:active{
 .offres{
     grid-template-columns:1fr;
 }
-.offres h3{
-    font-size:26px;
+.service h3{
+    font-size:22px;
     line-height:1.3;
 }
