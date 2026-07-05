@@ -24,9 +24,9 @@ def services():
     return render_template("services.html")
 
 
-@app.route("/parcours")
+@app.route("/realisations")
 def parcours():
-    return render_template("parcours.html")
+    return render_template("realisations.html")
 
 
 @app.route("/contact")
