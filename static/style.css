@@ -28,14 +28,14 @@ body {
 }
 
 h1 {
-    color: #d4af37;
+    color: #c8a24a;
     font-size: 1.8rem;
     margin-bottom: 20px;
     text-align: center;
 }
 
 h2 {
-    color: #d4af37;
+    color: #c8a24a;
     font-size: 1.8rem;
     margin-top: 30px;
     margin-bottom: 20px;
@@ -64,16 +64,37 @@ h2 {
 }
 
 
-.service {
-    max-width: 900px;
-    margin: 30px auto;
-    text-align: left;
-    color: white;
+.service{
+    max-width:900px;
+    margin:35px auto;
+    padding:32px;
+    text-align:left;
+    color:#f5f5f5;
+
+    background:linear-gradient(to bottom,#111,#181818);
+
+    border:1px solid rgba(200,162,74,.35);
+
+    border-radius:12px;
+
+    box-shadow:0 12px 35px rgba(0,0,0,.35);
+
+    transition:.30s;
 }
 
-.service h3 {
-    color: #d4af37;
-    margin-bottom: 10px;
+.service:hover{
+    transform:translateY(-4px);
+    border-color:#c8a24a;
+    box-shadow:0 16px 45px rgba(0,0,0,.50);
+}
+
+
+.service h3{
+    color:#d7b66a;
+    font-size:28px;
+    font-weight:700;
+    margin-bottom:18px;
+    letter-spacing:-0.3px;
 }
 
 .service p {
@@ -94,7 +115,7 @@ h2 {
 }
 
 .navbar a {
-    color: #d4af37;
+    color: #c8a24a;
     text-decoration: none;
     padding: 15px 25px;
     font-weight: bold;
@@ -117,7 +138,7 @@ h2 {
 }
 
 .contact h2 {
-    color: #d4af37;
+    color: #c8a24a;
     margin-bottom: 20px;
 }
 
@@ -128,7 +149,7 @@ summary {
     cursor: pointer;
     font-size: 1.4rem;
     font-weight: bold;
-    color: #d4af37;
+    color: #c8a24a;
     text-align: center;
     padding: 10px;
 }
@@ -149,7 +170,7 @@ details[open] summary {
     line-height: 1.8;
 }
 .service h4 {
-    color: #d4af37;
+    color: #c8a24a;
     margin-top: 25px;
     text-align: left;
 }
@@ -233,7 +254,7 @@ details[open] summary {
 .contact-form textarea{
     width:100%;
     padding:12px;
-    border:1px solid #d4af37;
+    border:1px solid #c8a24a;
     background:#111;
     color:white;
     font-size:15px;
@@ -246,7 +267,7 @@ details[open] summary {
 }
 
 .contact-form button{
-    background:#d4af37;
+    background:#c8a24a;
     color:black;
     border:none;
     padding:12px 30px;
@@ -258,29 +279,30 @@ details[open] summary {
 .contact-form button:hover{
     background:white;
 }
-    /* Boutons Ajouter au panier */
+    /* ===== Boutons ===== */
 
-button {
-    background: linear-gradient(to bottom, #e5c55a, #b8860b);
-    color: #000;
-    border: 2px solid #d4af37;
-    border-radius: 8px;
-    padding: 10px 22px;
-    font-size: 15px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    margin: 10px 0 20px 0;
-    box-shadow: 0 0 8px rgba(212,175,55,0.4);
+button{
+    background:linear-gradient(to bottom,#c8a24a,#9c7420);
+    color:#111;
+    border:1px solid #d7b66a;
+    border-radius:6px;
+    padding:10px 22px;
+    font-size:14px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.25s;
+    box-shadow:0 3px 10px rgba(0,0,0,.35);
+    margin:8px auto 18px auto;
+    display:block;
+    min-width:220px;
 }
 
-button:hover {
-    background: linear-gradient(to bottom, #f7df87, #c99700);
-    color: #000;
-    transform: scale(1.05);
-    box-shadow: 0 0 15px rgba(212,175,55,0.8);
+button:hover{
+    background:linear-gradient(to bottom,#d9b65b,#b08225);
+    transform:translateY(-2px);
+    box-shadow:0 6px 18px rgba(0,0,0,.45);
 }
 
-button:active {
-    transform: scale(0.97);
+button:active{
+    transform:translateY(1px);
 }
