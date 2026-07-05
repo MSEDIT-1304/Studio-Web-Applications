@@ -368,15 +368,29 @@ details[open] summary {
     color:#dddddd;
 
 }
+
+.contact-form label{
+
+    display:block;
+
+    margin:18px 0 6px;
+
+    color:#d7b66a;
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
 .contact-form input,
 .contact-form textarea{
     width:100%;
-    padding:12px;
+    padding:14px 16px;
     border:1px solid #c8a24a;
     background:#111;
     color:white;
     font-size:15px;
-    border-radius:5px;
+    border-radius:8px;
     box-sizing:border-box;
 }
 
