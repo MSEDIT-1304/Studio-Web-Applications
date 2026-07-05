@@ -223,10 +223,11 @@ details[open] summary {
 
 .prix{
     text-align:center;
-    font-size:34px;
-    font-weight:bold;
-    color:white;
-    margin:18px 0 28px;
+    font-size:20px;
+    font-weight:700;
+    color:#ffffff;
+    margin:15px 0 22px;
+    letter-spacing:0.5px;
 }
 
 .offre ul{
