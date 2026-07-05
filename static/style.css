@@ -340,19 +340,7 @@ details[open] summary {
     resize:vertical;
 }
 
-.contact-form button{
-    background:#c8a24a;
-    color:black;
-    border:none;
-    padding:12px 30px;
-    font-weight:bold;
-    cursor:pointer;
-    border-radius:5px;
-}
 
-.contact-form button:hover{
-    background:white;
-}
     /* ===== Boutons ===== */
 
 button{
