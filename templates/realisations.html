@@ -1,1 +1,249 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Réalisations - Studio Web & Applications</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+    <a href="/">Accueil</a>
+    <a href="/services">Mes services</a>
+    <a href="/realisations">Réalisations</a>
+    <a href="/contact">Contact</a>
+    <a href="/panier">Panier</a>
+
+</nav>
+
+<div class="contenu">
+
+    <img src="{{ url_for('static', filename='images/banniere_msedit.png') }}"
+         alt="Bannière Studio Web"
+         class="banniere">
+
+    <img src="{{ url_for('static', filename='images/logo_msedit.png') }}"
+         alt="Logo Studio Web"
+         class="logo">
+
+    <h2>Réalisations</h2>
+
+    <p class="slogan">
+        Découvrez quelques projets développés entièrement sur mesure.
+    </p>
+
+    <section class="services">
+
+<div class="service">
+
+    <h3>Cot'Auto</h3>
+
+    <p class="slogan" style="text-align:center;">
+        Application professionnelle de cotation automobile
+    </p>
+
+    <p>
+        Cot'Auto est une application web développée entièrement sur mesure pour les professionnels de l'automobile d'occasion. Elle permet d'obtenir rapidement une estimation cohérente du marché français grâce à un moteur de calcul dédié et une base de données spécialisée.
+    </p>
+
+    <h4>Fonctionnalités principales</h4>
+
+    <ul>
+
+        <li>Cotation automobile professionnelle</li>
+
+        <li>Accès réservé aux professionnels</li>
+
+        <li>Base de données spécialisée</li>
+
+        <li>Développement 100 % sur mesure</li>
+
+        <li>Compatible ordinateur, tablette et mobile</li>
+
+        <li>Hébergement sécurisé</li>
+
+    </ul>
+
+    <p style="text-align:center;margin-top:30px;">
+
+        <strong>
+        Accès réservé aux professionnels après validation du compte.
+        </strong>
+
+    </p>
+
+</div>
+
+<div class="service">
+
+    <h3>Le Domaine de Léa</h3>
+
+    <p class="slogan" style="text-align:center;">
+        Site internet de démonstration
+    </p>
+
+    <p>
+        Exemple de site internet développé pour un hébergement touristique. Cette démonstration présente un design moderne, une galerie photos, les tarifs, les informations pratiques ainsi qu'un parcours de réservation.
+    </p>
+
+    <h4>Caractéristiques</h4>
+
+    <ul>
+
+        <li>Design personnalisé</li>
+
+        <li>Compatible ordinateur, tablette et mobile</li>
+
+        <li>Galerie photos</li>
+
+        <li>Présentation des hébergements</li>
+
+        <li>Réservation en ligne</li>
+
+        <li>Développement sur mesure</li>
+
+    </ul>
+
+    <a href="https://site-de-demonstration-hebergement.onrender.com"
+       target="_blank">
+
+        <button>
+            Découvrir le site
+        </button>
+
+    </a>
+
+</div>
+
+<div class="service">
+
+    <h3>Site internet de démonstration</h3>
+
+    <p class="slogan" style="text-align:center;">
+        Exemple de site vitrine professionnel
+    </p>
+
+    <p>
+        Ce site de démonstration présente différentes possibilités de conception pour les artisans, commerçants, restaurants, garages, professions libérales et de nombreux autres secteurs d'activité.
+    </p>
+
+    <h4>Exemples de fonctionnalités</h4>
+
+    <ul>
+
+        <li>Design entièrement personnalisé</li>
+
+        <li>Présentation des services</li>
+
+        <li>Galerie photos</li>
+
+        <li>Formulaire de contact</li>
+
+        <li>Compatible ordinateur, tablette et mobile</li>
+
+        <li>Développement sur mesure</li>
+
+    </ul>
+
+    <a href="https://demo-de-votre-site-web.onrender.com"
+       target="_blank">
+
+        <button>
+            Découvrir le site
+        </button>
+
+    </a>
+
+</div>
+
+<div class="service">
+
+    <h3>S.L Multi Services</h3>
+
+    <p class="slogan" style="text-align:center;">
+        Site internet réalisé pour un client
+    </p>
+
+    <p>
+        Création d'un site internet professionnel destiné à présenter les prestations de l'entreprise, faciliter la prise de contact et renforcer sa visibilité sur internet.
+    </p>
+
+    <h4>Prestations réalisées</h4>
+
+    <ul>
+
+        <li>Création d'un design personnalisé</li>
+
+        <li>Présentation des services</li>
+
+        <li>Version responsive (ordinateur, tablette et mobile)</li>
+
+        <li>Optimisation de la navigation</li>
+
+        <li>Formulaire de contact</li>
+
+        <li>Mise en ligne du site</li>
+
+    </ul>
+
+    <a href="https://s-l-multi-services.onrender.com"
+       target="_blank">
+
+        <button>
+            Visiter le site
+        </button>
+
+    </a>
+
+</div>
+
+<div class="service">
+
+    <h3>Services aux écrivains</h3>
+
+    <p class="slogan" style="text-align:center;">
+        Site internet spécialisé
+    </p>
+
+    <p>
+        Site internet dédié aux auteurs proposant différents services tels que la correction de manuscrits, la mise en page, la création de couvertures et d'autres prestations destinées aux écrivains.
+    </p>
+
+    <h4>Prestations réalisées</h4>
+
+    <ul>
+
+        <li>Design personnalisé</li>
+
+        <li>Présentation des services</li>
+
+        <li>Boutique en ligne</li>
+
+        <li>Paiement sécurisé</li>
+
+        <li>Compatible ordinateur, tablette et mobile</li>
+
+        <li>Développement sur mesure</li>
+
+    </ul>
+
+    <a href="https://services-aux-ecrivains.onrender.com"
+       target="_blank">
+
+        <button>
+            Découvrir le site
+        </button>
+
+    </a>
+
+</div>
 
