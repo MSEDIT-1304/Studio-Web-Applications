@@ -571,3 +571,109 @@ button:active{
     min-width:220px;
 
 }
+
+/* ======================================================
+   POURQUOI CHOISIR STUDIO WEB & APPLICATIONS
+====================================================== */
+
+.avantages{
+
+    max-width:1200px;
+
+    margin:70px auto;
+
+    padding:0 20px;
+
+}
+
+.avantages h2{
+
+    text-align:center;
+
+    color:#d7b66a;
+
+    font-size:38px;
+
+    margin-bottom:50px;
+
+}
+
+.grille-avantages{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:28px;
+
+}
+
+.avantage{
+
+    background:linear-gradient(to bottom,#151515,#1d1d1d);
+
+    border:1px solid rgba(215,182,106,.25);
+
+    border-radius:14px;
+
+    padding:30px;
+
+    text-align:center;
+
+    transition:.30s;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.30);
+
+}
+
+.avantage:hover{
+
+    transform:translateY(-4px);
+
+    border-color:#d7b66a;
+
+    box-shadow:0 18px 40px rgba(0,0,0,.45);
+
+}
+
+.avantage h3{
+
+    color:#d7b66a;
+
+    font-size:23px;
+
+    margin-bottom:18px;
+
+}
+
+.avantage p{
+
+    color:#dddddd;
+
+    line-height:1.8;
+
+    font-size:15px;
+
+}
+
+@media (max-width:900px){
+
+.grille-avantages{
+
+    grid-template-columns:1fr;
+
+}
+
+.avantages h2{
+
+    font-size:30px;
+
+}
+
+.avantage{
+
+    padding:25px;
+
+}
+
+}
