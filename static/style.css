@@ -675,5 +675,34 @@ button:active{
     padding:25px;
 
 }
+/* ===== Footer ===== */
+
+footer{
+
+    margin-top:40px;
+
+    padding:25px 20px;
+
+    border-top:1px solid rgba(200,162,74,.20);
+
+}
+
+.footer-contenu{
+
+    max-width:1000px;
+
+    margin:0 auto;
+
+    text-align:center;
+
+}
+
+.footer-contenu p{
+
+    margin:0;
+
+    color:#b8b8b8;
+
+    font-size:13px;
 
 }
