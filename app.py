@@ -112,8 +112,8 @@ def payer():
             }
         ],
         mode="payment",
-        success_url="https://services-aux-ecrivains.onrender.com/success",
-        cancel_url="https://services-aux-ecrivains.onrender.com/panier",
+        success_url="https://studio-web-applications.onrender.com/success",
+        cancel_url="https://studio-web-applications.onrender.com/panier",
     )
 
     return redirect(checkout_session.url, code=303)
