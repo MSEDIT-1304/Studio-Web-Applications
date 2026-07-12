@@ -1,64 +1,122 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Panier</title>
+
+    <title>Mon panier - Studio Web & Applications</title>
+
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
 </head>
 
 <body>
 
 <nav class="navbar">
+
     <a href="/">Accueil</a>
     <a href="/services">Mes services</a>
-    <a href="/realisations">Mes réalisations sur mesure</a>
+    <a href="/realisations">Réalisations</a>
     <a href="/contact">Contact</a>
     <a href="/panier">Panier</a>
+
 </nav>
 
-<div class="contenu" id="accueil">
+<div class="contenu">
 
-    <img src="{{ url_for('static', filename='images/banniere_msedit.png') }}" alt="Bannière Studio Web" class="banniere">
+    <img src="{{ url_for('static', filename='images/banniere_msedit.png') }}"
+         alt="Bannière Studio Web"
+         class="banniere">
 
-    <img src="{{ url_for('static', filename='images/logo_msedit.png') }}" alt="Logo" class="logo">
+    <img src="{{ url_for('static', filename='images/logo_msedit.png') }}"
+         alt="Logo Studio Web"
+         class="logo">
 
     <h2>Mon panier</h2>
 
-    <div id="panier-contenu">
+    <p class="slogan">
+        Vérifiez votre sélection avant de finaliser votre commande.
+    </p>
+
+    <section class="services">
 
 {% if articles %}
 
-    <ul>
+{% for article in articles %}
 
-    {% for article in articles %}
+<div class="service">
 
-        <li>
-            {{ article.nom }} - {{ article.prix }} €
+    <h3>{{ article.nom }}</h3>
 
-            <a href="/supprimer/{{ article.code }}">
-                Supprimer
-            </a>
+    <p style="text-align:center;font-size:24px;font-weight:700;color:#ffffff;margin-top:25px;">
+        {{ article.prix }} € TTC
+    </p>
 
-        </li>
+    <a href="/supprimer/{{ article.code }}">
 
-    {% endfor %}
+        <button>
+            Supprimer
+        </button>
 
-    </ul>
-
-{% else %}
-
-    <p>Votre panier est vide.</p>
-
-{% endif %}
+    </a>
 
 </div>
 
-    <h3>Total : {{ total }} €</h3>
+{% endfor %}
+
+<div class="service">
+
+    <h3>Total de votre commande</h3>
+
+    <p style="text-align:center;font-size:32px;font-weight:700;color:#ffffff;margin:30px 0;">
+        {{ total }} € TTC
+    </p>
+
+    <a href="/services">
+
+        <button>
+            Continuer mes achats
+        </button>
+
+    </a>
 
     <a href="/payer">
-    <button>Payer</button>
-</a>
+
+        <button>
+            Finaliser ma commande
+        </button>
+
+    </a>
+
+</div>
+
+{% else %}
+
+<div class="service">
+
+    <h3>Votre panier est vide</h3>
+
+    <p style="text-align:center;">
+        Vous n'avez encore sélectionné aucun service.
+    </p>
+
+    <a href="/services">
+
+        <button>
+            Découvrir mes services
+        </button>
+
+    </a>
+
+</div>
+
+{% endif %}
+
+    </section>
+
 <br><br>
 
 <br><br>
@@ -78,6 +136,7 @@
 </footer>
 
 </div>
+
 </body>
 
 </html>
