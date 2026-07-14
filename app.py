@@ -1,134 +1,241 @@
-from flask import Flask, render_template, request, redirect, session
+from flask import Flask, render_template, redirect, session, url_for, request
 import stripe
 import os
 
-
 app = Flask(__name__)
-app.secret_key = "msedit_panier_2026"
+
+app.secret_key = "telma_tarot_destin_panier_2026"
+
 stripe.api_key = os.environ.get("STRIPE_SECRET_KEY")
 
-PRIX = {
-    
-    "site550": ("Site vitrine Essentiel", 550),
-    "site750": ("Site vitrine Premium", 750)
+
+# ==========================================================
+# PRODUITS
+# ==========================================================
+
+PRODUITS = {
+
+    "tirage_simple": {
+        "nom": "Tirage simple",
+        "prix": 30
+    },
+
+    "tirage_complet": {
+        "nom": "Tirage complet",
+        "prix": 50
+    },
+
+    "pendule": {
+        "nom": "Pendule",
+        "prix": 30
+    }
+
 }
 
 
+# ==========================================================
+# FONCTIONS
+# ==========================================================
+
+def panier():
+
+    if "panier" not in session:
+        session["panier"] = []
+
+    return session["panier"]
+
+
+def total_panier():
+
+    total = 0
+
+    for article in panier():
+        total += article["prix"]
+
+    return total
+
+
+# ==========================================================
+# PAGES
+# ==========================================================
+
 @app.route("/")
-def home():
+def accueil():
+
     return render_template("index.html")
 
 
 @app.route("/services")
 def services():
+
     return render_template("services.html")
-
-
-@app.route("/realisations")
-def parcours():
-    return render_template("realisations.html")
 
 
 @app.route("/contact")
 def contact():
+
     return render_template("contact.html")
 
 
 @app.route("/panier")
-def panier():
-
-    panier = session.get("panier", [])
-
-    articles = []
-    total = 0
-
-    for produit in panier:
-        if produit in PRIX:
-            nom, prix = PRIX[produit]
-            articles.append({
-                "code": produit,
-                "nom": nom,
-                "prix": prix
-            })
-            total += prix
+def voir_panier():
 
     return render_template(
+
         "panier.html",
-        articles=articles,
-        total=total
+
+        articles=panier(),
+
+        total=total_panier()
+
     )
 
+
+# ==========================================================
+# AJOUT AU PANIER
+# ==========================================================
 
 @app.route("/ajouter/<produit>")
 def ajouter(produit):
 
-    panier = session.get("panier", [])
-    panier.append(produit)
+    if produit not in PRODUITS:
 
-    session["panier"] = panier
+        return redirect(url_for("services"))
 
-    return redirect("/panier")
+    article = {
 
+        "code": produit,
+
+        "nom": PRODUITS[produit]["nom"],
+
+        "prix": PRODUITS[produit]["prix"]
+
+    }
+
+    p = panier()
+
+    p.append(article)
+
+    session["panier"] = p
+
+    session.modified = True
+
+    return redirect(url_for("voir_panier"))
+
+# ==========================================================
+# SUPPRIMER DU PANIER
+# ==========================================================
 
 @app.route("/supprimer/<produit>")
 def supprimer(produit):
 
-    panier = session.get("panier", [])
+    p = panier()
 
-    if produit in panier:
-        panier.remove(produit)
+    for article in p:
 
-    session["panier"] = panier
+        if article["code"] == produit:
 
-    return redirect("/panier")
-    
+            p.remove(article)
+
+            break
+
+    session["panier"] = p
+
+    session.modified = True
+
+    return redirect(url_for("voir_panier"))
+
+
+# ==========================================================
+# PAIEMENT STRIPE
+# ==========================================================
+
 @app.route("/payer")
 def payer():
 
-    panier = session.get("panier", [])
+    if len(panier()) == 0:
 
-    total = 0
+        return redirect(url_for("voir_panier"))
 
-    for produit in panier:
-        if produit in PRIX:
-            total += PRIX[produit][1]
-            
+    line_items = []
 
-    if total == 0:
-        return redirect("/panier")
+    for article in panier():
 
-    checkout_session = stripe.checkout.Session.create(
-        payment_method_types=["card"],
-        line_items=[
-            {
-                "price_data": {
-                    "currency": "eur",
-                    "product_data": {
-                        "name": "Commande M.S Édit"
-                    },
-                    "unit_amount": int(total * 100),
+        line_items.append({
+
+            "price_data": {
+
+                "currency": "eur",
+
+                "product_data": {
+
+                    "name": article["nom"]
+
                 },
-                "quantity": 1,
-            }
-        ],
+
+                "unit_amount": int(article["prix"] * 100)
+
+            },
+
+            "quantity": 1
+
+        })
+
+    checkout = stripe.checkout.Session.create(
+
+        payment_method_types=["card"],
+
+        line_items=line_items,
+
         mode="payment",
-        success_url="https://studio-web-applications.onrender.com/success",
-        cancel_url="https://studio-web-applications.onrender.com/panier",
+
+        success_url=request.host_url.rstrip("/") + "/success",
+
+        cancel_url=request.host_url.rstrip("/") + "/cancel"
+
     )
 
-    return redirect(checkout_session.url, code=303)
+    return redirect(checkout.url, code=303)
 
+# ==========================================================
+# PAIEMENT VALIDE
+# ==========================================================
 
 @app.route("/success")
 def success():
 
+    commandes = list(panier())
+
     session["panier"] = []
 
-    return """
-    <h1>Paiement réussi</h1>
-    <p>Merci pour votre commande.</p>
-    <a href='/'>Retour à l'accueil</a>
-    """
+    session.modified = True
+
+    return render_template(
+
+        "remerciements.html",
+
+        commandes=commandes
+
+    )
+
+# ==========================================================
+# PAIEMENT ANNULE
+# ==========================================================
+
+@app.route("/cancel")
+def cancel():
+
+    return redirect(url_for("voir_panier"))
+
+
+# ==========================================================
+# LANCEMENT
+# ==========================================================
 
 if __name__ == "__main__":
-    app.run(debug=True)
+
+    app.run(
+        host="0.0.0.0",
+        port=int(os.environ.get("PORT", 5000)),
+        debug=True
+    )
