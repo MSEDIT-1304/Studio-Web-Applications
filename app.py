@@ -60,29 +60,6 @@ METIERS = [
 
 ]
 
-
-SEO_PAGES = {}
-
-for metier in METIERS:
-
-    slug = (
-        "creation-site-"
-        + metier.lower()
-        .replace(" ", "-")
-        .replace("é", "e")
-        .replace("è", "e")
-        .replace("ê", "e")
-        .replace("à", "a")
-        .replace("ç", "c")
-        .replace("î", "i")
-        .replace("ï", "i")
-        .replace("ô", "o")
-        .replace("ù", "u")
-        .replace("û", "u")
-        .replace("'", "-")
-    )
-
-    SEO_PAGES[slug] = creer_page(metier)
 def creer_page(
     metier,
     titre=None,
@@ -157,7 +134,28 @@ def creer_page(
 
     }
 
+SEO_PAGES = {}
 
+for metier in METIERS:
+
+    slug = (
+        "creation-site-"
+        + metier.lower()
+        .replace(" ", "-")
+        .replace("é", "e")
+        .replace("è", "e")
+        .replace("ê", "e")
+        .replace("à", "a")
+        .replace("ç", "c")
+        .replace("î", "i")
+        .replace("ï", "i")
+        .replace("ô", "o")
+        .replace("ù", "u")
+        .replace("û", "u")
+        .replace("'", "-")
+    )
+
+    SEO_PAGES[slug] = creer_page(metier)
 
 @app.route("/")
 def home():
