@@ -82,6 +82,24 @@ def creer_page(
             f"site web {metier}"
         )
 
+    contenu = CONTENUS_METIERS.get(metier, {})
+
+    intro = contenu.get(
+        "intro",
+        f"Vous êtes {metier} et vous souhaitez développer votre activité ? Studio Web & Applications crée des sites internet professionnels entièrement personnalisés, conçus pour améliorer votre visibilité sur Google et faciliter la prise de contact avec vos futurs clients."
+    )
+
+    fonctionnalites = contenu.get(
+        "fonctionnalites",
+        [
+            "Formulaire de contact",
+            "Demande de devis",
+            "Google Maps",
+            "Avis clients",
+            "Site responsive"
+        ]
+    )
+
     return {
 
         "title": titre,
@@ -94,29 +112,45 @@ def creer_page(
 
         "slogan": "Développez votre visibilité grâce à un site internet professionnel.",
 
-        "introduction":
-            f"Vous êtes {metier} et vous souhaitez développer votre activité ? Studio Web & Applications crée des sites internet professionnels entièrement personnalisés, conçus pour améliorer votre visibilité sur Google et faciliter la prise de contact avec vos futurs clients.",
+        "introduction": intro,
         "texte":
-            f"Chaque site internet créé pour un(e) {metier} est développé sur mesure. Selon votre activité, il peut intégrer un formulaire de devis, une galerie photos, une carte Google Maps, des avis clients, un agenda de réservation, un espace d'administration ainsi que toutes les fonctionnalités utiles à votre métier. Notre objectif est de vous aider à gagner en visibilité et à convertir davantage de visiteurs en clients.",
+            "Fonctionnalités pouvant être intégrées à votre site internet : "
+            + ", ".join(fonctionnalites) + ".",
 
         "faq": [
 
-            {
-                "question": f"Pourquoi un(e) {metier} a-t-il besoin d'un site internet ?",
-                "reponse": f"Un site internet professionnel permet à un(e) {metier} d'être visible sur Google, de présenter ses prestations, d'inspirer confiance et de recevoir de nouvelles demandes de contact."
-            },
-        
-            {
-                "question": f"Quelles fonctionnalités sont utiles pour un(e) {metier} ?",
-                "reponse": "Selon votre activité, votre site peut intégrer un formulaire de contact, une demande de devis, une galerie photos, Google Maps, des avis clients, un agenda de réservation ou un espace d'administration."
-            },
-        
-            {
-                "question": "Le site est-il compatible avec les téléphones mobiles ?",
-                "reponse": "Oui. Tous les sites développés sont compatibles avec les ordinateurs, les tablettes et les smartphones."
-            }
-        
-        ],
+    {
+        "question": f"Pourquoi un(e) {metier} a-t-il besoin d'un site internet ?",
+        "reponse": f"Un site internet professionnel permet à un(e) {metier} d'être visible sur Google, de présenter ses prestations, d'inspirer confiance et de recevoir de nouvelles demandes de contact."
+    },
+
+    {
+        "question": f"Quelles fonctionnalités sont utiles pour un(e) {metier} ?",
+        "reponse": "Selon votre activité, votre site peut intégrer un formulaire de contact, une demande de devis, une galerie photos, Google Maps, des avis clients, un agenda de réservation ou un espace d'administration."
+    },
+
+    {
+        "question": "Le site est-il compatible avec les téléphones mobiles ?",
+        "reponse": "Oui. Tous les sites développés sont compatibles avec les ordinateurs, les tablettes et les smartphones."
+    }
+
+],
+
+"liens": [
+
+    {
+        "nom": "Nos services",
+        "url": "/services"
+    },
+
+    {
+        "nom": "Nous contacter",
+        "url": "/contact"
+    }
+
+]
+
+}
 
 CONTENUS_METIERS = {
 
