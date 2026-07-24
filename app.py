@@ -95,44 +95,87 @@ def creer_page(
         "slogan": "Développez votre visibilité grâce à un site internet professionnel.",
 
         "introduction":
-            f"Studio Web & Applications développe des sites internet professionnels pour les {metier}.",
-
+            f"Vous êtes {metier} et vous souhaitez développer votre activité ? Studio Web & Applications crée des sites internet professionnels entièrement personnalisés, conçus pour améliorer votre visibilité sur Google et faciliter la prise de contact avec vos futurs clients.",
         "texte":
-            f"Chaque site internet destiné aux {metier} est entièrement personnalisé. "
-            "Il peut intégrer un formulaire de devis, une galerie photo, Google Maps, "
-            "des avis clients, un paiement sécurisé et toutes les fonctionnalités nécessaires.",
+            f"Chaque site internet créé pour un(e) {metier} est développé sur mesure. Selon votre activité, il peut intégrer un formulaire de devis, une galerie photos, une carte Google Maps, des avis clients, un agenda de réservation, un espace d'administration ainsi que toutes les fonctionnalités utiles à votre métier. Notre objectif est de vous aider à gagner en visibilité et à convertir davantage de visiteurs en clients.",
 
         "faq": [
 
             {
-                "question": f"Pourquoi créer un site internet pour {metier} ?",
-                "reponse":
-                    "Un site internet permet de développer votre visibilité et de trouver de nouveaux clients."
+                "question": f"Pourquoi un(e) {metier} a-t-il besoin d'un site internet ?",
+                "reponse": f"Un site internet professionnel permet à un(e) {metier} d'être visible sur Google, de présenter ses prestations, d'inspirer confiance et de recevoir de nouvelles demandes de contact."
             },
-
+        
             {
-                "question": "Puis-je ajouter un paiement en ligne ?",
-                "reponse":
-                    "Oui, nous pouvons intégrer Stripe ou d'autres solutions sécurisées."
+                "question": f"Quelles fonctionnalités sont utiles pour un(e) {metier} ?",
+                "reponse": "Selon votre activité, votre site peut intégrer un formulaire de contact, une demande de devis, une galerie photos, Google Maps, des avis clients, un agenda de réservation ou un espace d'administration."
+            },
+        
+            {
+                "question": "Le site est-il compatible avec les téléphones mobiles ?",
+                "reponse": "Oui. Tous les sites développés sont compatibles avec les ordinateurs, les tablettes et les smartphones."
             }
-
+        
         ],
 
-        "liens": [
+CONTENUS_METIERS = {
 
-            {
-                "nom": "Nos services",
-                "url": "/services"
-            },
-
-            {
-                "nom": "Nous contacter",
-                "url": "/contact"
-            }
-
+    "plombier": {
+        "intro": "Vous êtes plombier et souhaitez développer votre clientèle ? Un site internet professionnel vous permet d'être trouvé sur Google, de présenter vos prestations et de recevoir rapidement des demandes de devis.",
+        "fonctionnalites": [
+            "Formulaire de demande de devis",
+            "Présentation des prestations",
+            "Intervention d'urgence",
+            "Carte Google Maps",
+            "Avis clients"
         ]
+    },
 
+    "chauffagiste": {
+        "intro": "Présentez vos installations, entretiens et dépannages grâce à un site internet moderne qui inspire confiance et facilite la prise de contact.",
+        "fonctionnalites": [
+            "Demande de devis",
+            "Contrats d'entretien",
+            "Présentation des services",
+            "Google Maps",
+            "Avis clients"
+        ]
+    },
+
+    "électricien": {
+        "intro": "Développez votre visibilité locale avec un site internet optimisé pour mettre en avant vos installations, dépannages et mises aux normes.",
+        "fonctionnalites": [
+            "Demande d'intervention",
+            "Présentation des réalisations",
+            "Google Maps",
+            "Avis clients",
+            "Formulaire de contact"
+        ]
+    },
+
+    "restaurant": {
+        "intro": "Donnez envie à vos futurs clients grâce à un site internet mettant en valeur votre établissement, votre carte et vos services.",
+        "fonctionnalites": [
+            "Présentation du menu",
+            "Réservation",
+            "Galerie photos",
+            "Google Maps",
+            "Horaires"
+        ]
+    },
+
+    "avocat": {
+        "intro": "Présentez vos domaines d'intervention et permettez à vos futurs clients de prendre facilement contact avec votre cabinet.",
+        "fonctionnalites": [
+            "Présentation du cabinet",
+            "Prise de rendez-vous",
+            "Formulaire sécurisé",
+            "Google Maps",
+            "Contact rapide"
+        ]
     }
+
+}    
 
 SEO_PAGES = {}
 
