@@ -8,9 +8,11 @@ app.secret_key = "msedit_panier_2026"
 stripe.api_key = os.environ.get("STRIPE_SECRET_KEY")
 
 PRIX = {
-    
+
     "site550": ("Site vitrine Essentiel", 550),
-    "site750": ("Site vitrine Premium", 750)
+    "site750": ("Site vitrine Premium", 750),
+    "application2500": ("Application web personnalisée", 2500)
+
 }
 
 
