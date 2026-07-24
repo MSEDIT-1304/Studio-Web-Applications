@@ -15,56 +15,74 @@ PRIX = {
 
 }
 
-SEO_PAGES = {
+METIERS = [
 
-    "creation-site-plombier": {
+    "plombier",
+    "chauffagiste",
+    "électricien",
+    "menuisier",
+    "maçon",
+    "peintre",
+    "couvreur",
+    "charpentier",
+    "carreleur",
+    "plaquiste",
+    "serrurier",
+    "vitrier",
+    "paysagiste",
+    "jardinier",
+    "élagueur",
+    "pisciniste",
+    "garagiste",
+    "mécanicien",
+    "carrossier",
+    "dépanneur",
+    "coiffeur",
+    "esthéticienne",
+    "restaurant",
+    "boulanger",
+    "pâtissier",
+    "boucher",
+    "traiteur",
+    "photographe",
+    "architecte",
+    "avocat",
+    "notaire",
+    "expert-comptable",
+    "médecin",
+    "dentiste",
+    "kinésithérapeute",
+    "psychologue",
+    "coach sportif",
+    "agent immobilier",
+    "artisan",
+    "entreprise"
 
-        "title": "Création de site internet pour plombier",
+]
 
-        "meta_description": "Création de site internet professionnel pour plombier avec référencement Google, paiement en ligne, formulaire de devis et réservation.",
 
-        "keywords": "site internet plombier, création site plombier, plombier, référencement",
+SEO_PAGES = {}
 
-        "h1": "Création de site internet pour plombier",
+for metier in METIERS:
 
-        "slogan": "Développez votre activité grâce à un site internet professionnel.",
+    slug = (
+        "creation-site-"
+        + metier.lower()
+        .replace(" ", "-")
+        .replace("é", "e")
+        .replace("è", "e")
+        .replace("ê", "e")
+        .replace("à", "a")
+        .replace("ç", "c")
+        .replace("î", "i")
+        .replace("ï", "i")
+        .replace("ô", "o")
+        .replace("ù", "u")
+        .replace("û", "u")
+        .replace("'", "-")
+    )
 
-        "introduction": "Studio Web & Applications développe des sites internet modernes destinés aux plombiers souhaitant améliorer leur visibilité et trouver de nouveaux clients.",
-
-        "texte": "Chaque site est entièrement personnalisé selon votre activité. Il peut intégrer un formulaire de devis, un paiement en ligne, une galerie de réalisations, Google Maps, des avis clients et bien d'autres fonctionnalités.",
-
-        "faq": [
-
-            {
-                "question": "Combien coûte un site internet pour plombier ?",
-                "reponse": "Le tarif dépend des fonctionnalités souhaitées. Consultez la page Services pour découvrir nos offres."
-            },
-
-            {
-                "question": "Puis-je accepter les paiements en ligne ?",
-                "reponse": "Oui. Nous pouvons intégrer Stripe et d'autres solutions de paiement sécurisées."
-            }
-
-        ],
-
-        "liens": [
-
-            {
-                "nom": "Création de site internet avec paiement en ligne",
-                "url": "/creation-site-paiement-en-ligne"
-            },
-
-            {
-                "nom": "Création de site internet en France",
-                "url": "/creation-site-france"
-            }
-
-        ]
-
-    }
-
-}
-
+    SEO_PAGES[slug] = creer_page(metier)
 def creer_page(
     metier,
     titre=None,
@@ -139,50 +157,6 @@ def creer_page(
 
     }
 
-METIERS = [
-
-    "plombier",
-    "chauffagiste",
-    "électricien",
-    "menuisier",
-    "maçon",
-    "peintre",
-    "couvreur",
-    "charpentier",
-    "carreleur",
-    "plaquiste",
-    "serrurier",
-    "vitrier",
-    "paysagiste",
-    "jardinier",
-    "élagueur",
-    "pisciniste",
-    "garagiste",
-    "mécanicien",
-    "carrossier",
-    "dépanneur",
-    "coiffeur",
-    "esthéticienne",
-    "restaurant",
-    "boulanger",
-    "pâtissier",
-    "boucher",
-    "traiteur",
-    "photographe",
-    "architecte",
-    "avocat",
-    "notaire",
-    "expert-comptable",
-    "médecin",
-    "dentiste",
-    "kinésithérapeute",
-    "psychologue",
-    "coach sportif",
-    "agent immobilier",
-    "artisan",
-    "entreprise"
-
-]
 
 
 @app.route("/")
