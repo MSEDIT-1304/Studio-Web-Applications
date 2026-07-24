@@ -1,1 +1,391 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="color-scheme" content="dark">
+    <meta name="theme-color" content="#000000">
+
+    <title>{{ page.title }}</title>
+
+    <meta name="description" content="{{ page.meta_description }}">
+    <meta name="keywords" content="{{ page.keywords }}">
+    <meta name="author" content="Studio Web & Applications">
+
+    <meta property="og:title" content="{{ page.title }}">
+    <meta property="og:description" content="{{ page.meta_description }}">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="{{ url_for('static', filename='images/logo_msedit.png') }}">
+
+    <link rel="icon"
+          type="image/png"
+          href="{{ url_for('static', filename='images/logo.png') }}">
+
+    <link rel="apple-touch-icon"
+          href="{{ url_for('static', filename='images/logo.png') }}">
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+    <a href="/">Accueil</a>
+
+    <a href="/services">Mes services</a>
+
+    <a href="/realisations">Mes réalisations sur mesure</a>
+
+    <a href="/contact">Contact</a>
+
+    <a href="/panier">Panier</a>
+
+</nav>
+
+<div class="contenu">
+
+    <img src="{{ url_for('static', filename='images/banniere_msedit.png') }}"
+         alt="Studio Web & Applications"
+         class="banniere">
+
+    <img src="{{ url_for('static', filename='images/logo_msedit.png') }}"
+         alt="Logo Studio Web"
+         class="logo">
+
+<section class="presentation">
+
+    <h1>{{ page.h1 }}</h1>
+
+    <p class="slogan">
+
+        {{ page.slogan }}
+
+    </p>
+
+    <p>
+
+        {{ page.introduction }}
+
+    </p>
+
+    <p>
+
+        {{ page.texte }}
+
+    </p>
+
+</section>
+<section class="avantages">
+
+    <h2>Pourquoi choisir Studio Web & Applications ?</h2>
+
+    <div class="grille-avantages">
+
+        <div class="avantage">
+            <h3>Développement sur mesure</h3>
+            <p>
+                Chaque site internet ou application est entièrement conçu
+                selon vos besoins, sans modèle préconçu.
+            </p>
+        </div>
+
+        <div class="avantage">
+            <h3>Compatible PC, tablette & mobile</h3>
+            <p>
+                Une interface responsive garantissant une expérience
+                optimale sur tous les appareils.
+            </p>
+        </div>
+
+        <div class="avantage">
+            <h3>Référencement optimisé</h3>
+            <p>
+                Structure pensée pour améliorer votre visibilité
+                sur Google et les moteurs de recherche.
+            </p>
+        </div>
+
+        <div class="avantage">
+            <h3>Paiement sécurisé</h3>
+            <p>
+                Intégration de Stripe, paiement en ligne,
+                réservation et solutions sécurisées.
+            </p>
+        </div>
+
+        <div class="avantage">
+            <h3>Accompagnement personnalisé</h3>
+            <p>
+                Conseils, suivi et assistance avant,
+                pendant et après la mise en ligne.
+            </p>
+        </div>
+
+        <div class="avantage">
+            <h3>Évolutif</h3>
+            <p>
+                Votre site ou votre application peut évoluer
+                avec votre entreprise.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="presentation">
+
+    <h2>Fonctionnalités disponibles</h2>
+
+    <p>
+
+        Selon votre activité, votre projet peut intégrer
+        une ou plusieurs fonctionnalités afin de répondre
+        précisément à vos besoins.
+
+    </p>
+
+    <div class="grille-avantages">
+
+        <div class="avantage">
+            <h3>Paiement en ligne</h3>
+            <p>Carte bancaire, Stripe et solutions sécurisées.</p>
+        </div>
+
+        <div class="avantage">
+            <h3>Réservation en ligne</h3>
+            <p>Réservation d'hébergement, rendez-vous ou prestations.</p>
+        </div>
+
+        <div class="avantage">
+            <h3>Google Calendar</h3>
+            <p>Synchronisation automatique des disponibilités.</p>
+        </div>
+
+        <div class="avantage">
+            <h3>Espace client</h3>
+            <p>Connexion sécurisée et accès personnalisé.</p>
+        </div>
+
+        <div class="avantage">
+            <h3>Espace administrateur</h3>
+            <p>Gestion simple du contenu et des utilisateurs.</p>
+        </div>
+
+        <div class="avantage">
+            <h3>Devis en ligne</h3>
+            <p>Demande de devis rapide directement depuis votre site.</p>
+        </div>
+
+        <div class="avantage">
+            <h3>Galerie photos</h3>
+            <p>Mise en valeur de vos réalisations et de vos produits.</p>
+        </div>
+
+        <div class="avantage">
+            <h3>Google Maps</h3>
+            <p>Localisation de votre entreprise en un clic.</p>
+        </div>
+
+        <div class="avantage">
+            <h3>Avis clients</h3>
+            <p>Affichage des témoignages pour renforcer la confiance.</p>
+        </div>
+
+        <div class="avantage">
+            <h3>Blog</h3>
+            <p>Publication d'articles pour améliorer votre référencement.</p>
+        </div>
+
+        <div class="avantage">
+            <h3>Application web</h3>
+            <p>Développement d'outils métiers personnalisés.</p>
+        </div>
+
+        <div class="avantage">
+            <h3>Application mobile</h3>
+            <p>Création d'applications Android et iPhone sur mesure.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="presentation">
+
+    <h2>Quelques réalisations</h2>
+
+    <p>
+
+        Chaque projet est conçu sur mesure selon les besoins de nos clients.
+        Que vous soyez artisan, commerçant, profession libérale ou propriétaire
+        d'un hébergement touristique, nous développons des solutions adaptées
+        à votre activité.
+
+    </p>
+
+    <div class="grille-avantages">
+
+        <div class="avantage">
+
+            <h3>Le Domaine de Léa</h3>
+
+            <p>
+
+                Site internet avec réservation en ligne,
+                calendrier de disponibilités et paiement sécurisé.
+
+            </p>
+
+        </div>
+
+        <div class="avantage">
+
+            <h3>S.L Multi Services</h3>
+
+            <p>
+
+                Site professionnel pour une entreprise de
+                plomberie, chauffage, électricité et jardin.
+
+            </p>
+
+        </div>
+
+        <div class="avantage">
+
+            <h3>Cot'Auto</h3>
+
+            <p>
+
+                Application web professionnelle permettant
+                l'estimation de véhicules d'occasion.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="presentation">
+
+    <h2>Questions fréquentes</h2>
+
+    {% for faq in page.faq %}
+
+    <div class="avantage">
+
+        <h3>{{ faq.question }}</h3>
+
+        <p>
+
+            {{ faq.reponse }}
+
+        </p>
+
+    </div>
+
+    {% endfor %}
+
+</section>
+
+
+<section class="presentation">
+
+    <h2>Découvrir également</h2>
+
+    <p>
+
+        Vous pouvez également consulter nos autres services
+        et solutions numériques.
+
+    </p>
+
+    <ul class="seo-links">
+
+        {% for lien in page.liens %}
+
+        <li>
+
+            <a href="{{ lien.url }}">
+
+                {{ lien.nom }}
+
+            </a>
+
+        </li>
+
+        {% endfor %}
+
+    </ul>
+
+</section>
+
+<section class="presentation" style="text-align:center;">
+
+    <h2>Votre projet mérite une solution sur mesure</h2>
+
+    <p>
+
+        Que vous souhaitiez créer un site internet professionnel,
+        une application web personnalisée ou une application mobile,
+        Studio Web & Applications vous accompagne dans toutes les étapes
+        de votre projet.
+
+    </p>
+
+    <p>
+
+        Chaque réalisation est développée selon vos besoins,
+        votre activité et vos objectifs.
+
+    </p>
+
+    <br>
+
+    <a href="/services" class="btn-commander">
+
+        Commander
+
+    </a>
+
+    &nbsp;&nbsp;
+
+    <a href="/contact" class="btn-contact">
+
+        Nous contacter
+
+    </a>
+
+</section>
+
+
+<footer>
+
+    <div class="footer-contenu">
+
+        <p>
+
+            © 2026 Studio Web & Applications - Tous droits réservés.
+
+        </p>
+
+    </div>
+
+</footer>
+
+</div>
+
+</body>
+
+</html>
 
