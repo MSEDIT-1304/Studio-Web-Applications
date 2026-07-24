@@ -320,6 +320,17 @@ def sitemap():
     xml += "</urlset>"
 
     return Response(xml, mimetype="application/xml")
+
+@app.route("/robots.txt")
+def robots():
+
+    robots_txt = """User-agent: *
+Allow: /
+
+Sitemap: https://studio-web-applications.onrender.com/sitemap.xml
+"""
+
+    return Response(robots_txt, mimetype="text/plain")
     
 
 if __name__ == "__main__":
