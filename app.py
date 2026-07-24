@@ -65,6 +65,125 @@ SEO_PAGES = {
 
 }
 
+def creer_page(
+    metier,
+    titre=None,
+    description=None,
+    mots_cles=None
+):
+
+    if titre is None:
+        titre = f"Création de site internet pour {metier}"
+
+    if description is None:
+        description = (
+            f"Création de site internet professionnel pour {metier}. "
+            "Développement sur mesure, référencement Google, paiement en ligne et réservation."
+        )
+
+    if mots_cles is None:
+        mots_cles = (
+            f"site internet {metier}, création site {metier}, "
+            f"site web {metier}"
+        )
+
+    return {
+
+        "title": titre,
+
+        "meta_description": description,
+
+        "keywords": mots_cles,
+
+        "h1": titre,
+
+        "slogan": "Développez votre visibilité grâce à un site internet professionnel.",
+
+        "introduction":
+            f"Studio Web & Applications développe des sites internet professionnels pour les {metier}.",
+
+        "texte":
+            f"Chaque site internet destiné aux {metier} est entièrement personnalisé. "
+            "Il peut intégrer un formulaire de devis, une galerie photo, Google Maps, "
+            "des avis clients, un paiement sécurisé et toutes les fonctionnalités nécessaires.",
+
+        "faq": [
+
+            {
+                "question": f"Pourquoi créer un site internet pour {metier} ?",
+                "reponse":
+                    "Un site internet permet de développer votre visibilité et de trouver de nouveaux clients."
+            },
+
+            {
+                "question": "Puis-je ajouter un paiement en ligne ?",
+                "reponse":
+                    "Oui, nous pouvons intégrer Stripe ou d'autres solutions sécurisées."
+            }
+
+        ],
+
+        "liens": [
+
+            {
+                "nom": "Nos services",
+                "url": "/services"
+            },
+
+            {
+                "nom": "Nous contacter",
+                "url": "/contact"
+            }
+
+        ]
+
+    }
+
+METIERS = [
+
+    "plombier",
+    "chauffagiste",
+    "électricien",
+    "menuisier",
+    "maçon",
+    "peintre",
+    "couvreur",
+    "charpentier",
+    "carreleur",
+    "plaquiste",
+    "serrurier",
+    "vitrier",
+    "paysagiste",
+    "jardinier",
+    "élagueur",
+    "pisciniste",
+    "garagiste",
+    "mécanicien",
+    "carrossier",
+    "dépanneur",
+    "coiffeur",
+    "esthéticienne",
+    "restaurant",
+    "boulanger",
+    "pâtissier",
+    "boucher",
+    "traiteur",
+    "photographe",
+    "architecte",
+    "avocat",
+    "notaire",
+    "expert-comptable",
+    "médecin",
+    "dentiste",
+    "kinésithérapeute",
+    "psychologue",
+    "coach sportif",
+    "agent immobilier",
+    "artisan",
+    "entreprise"
+
+]
+
 
 @app.route("/")
 def home():
