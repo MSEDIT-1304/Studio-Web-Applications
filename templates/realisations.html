@@ -309,6 +309,43 @@
     </a>
 </div>
 
+<section class="realisation-card metiers-card">
+
+    <h2>Votre métier</h2>
+
+    <p>
+        Vous ne trouvez pas votre activité parmi nos réalisations ?
+        Découvrez un exemple de page spécialement conçue pour votre profession.
+    </p>
+
+    <div class="liste-metiers">
+
+        {% for metier in metiers %}
+
+        <a href="/creation-site-{{ metier
+            | lower
+            | replace(' ', '-')
+            | replace('é','e')
+            | replace('è','e')
+            | replace('ê','e')
+            | replace('à','a')
+            | replace('ç','c')
+            | replace('î','i')
+            | replace('ï','i')
+            | replace('ô','o')
+            | replace('ù','u')
+            | replace('û','u')
+            | replace("'", "-")
+        }}">
+            {{ metier }}
+        </a>
+
+        {% endfor %}
+
+    </div>
+
+</section>
+
 <br><br>
 
 <br><br>
