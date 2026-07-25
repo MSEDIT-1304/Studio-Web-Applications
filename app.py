@@ -209,7 +209,6 @@ CONTENUS_METIERS = {
         ]
     },
 
-    ,
     "boulanger": {
         "intro": "Présentez votre boulangerie, vos spécialités et vos horaires grâce à un site internet professionnel qui donne envie à vos clients de vous rendre visite.",
         "fonctionnalites": [
@@ -265,7 +264,7 @@ CONTENUS_METIERS = {
         ]
     },
 
-        "architecte": {
+    "architecte": {
         "intro": "Présentez vos réalisations, vos domaines d'expertise et permettez à vos futurs clients de découvrir votre savoir-faire grâce à un site internet professionnel.",
         "fonctionnalites": [
             "Présentation des projets",
@@ -320,7 +319,7 @@ CONTENUS_METIERS = {
         ]
     },
 
-        "kinésithérapeute": {
+    "kinésithérapeute": {
         "intro": "Présentez votre cabinet, vos spécialités et simplifiez la prise de rendez-vous grâce à un site internet professionnel.",
         "fonctionnalites": [
             "Présentation des soins",
@@ -384,7 +383,7 @@ CONTENUS_METIERS = {
             "Google Maps",
             "Avis clients"
         ]
-    },
+    }
 
 }    
 
