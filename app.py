@@ -207,7 +207,184 @@ CONTENUS_METIERS = {
             "Google Maps",
             "Contact rapide"
         ]
-    }
+    },
+
+    ,
+    "boulanger": {
+        "intro": "Présentez votre boulangerie, vos spécialités et vos horaires grâce à un site internet professionnel qui donne envie à vos clients de vous rendre visite.",
+        "fonctionnalites": [
+            "Présentation des produits",
+            "Horaires",
+            "Google Maps",
+            "Galerie photos",
+            "Formulaire de contact"
+        ]
+    },
+
+    "pâtissier": {
+        "intro": "Mettez en valeur vos créations, vos commandes personnalisées et vos prestations grâce à un site internet moderne et élégant.",
+        "fonctionnalites": [
+            "Galerie de réalisations",
+            "Commande de gâteaux",
+            "Formulaire de devis",
+            "Google Maps",
+            "Contact"
+        ]
+    },
+
+    "boucher": {
+        "intro": "Valorisez votre savoir-faire, vos produits et vos services avec un site internet professionnel adapté à votre activité.",
+        "fonctionnalites": [
+            "Présentation des produits",
+            "Horaires",
+            "Google Maps",
+            "Avis clients",
+            "Contact"
+        ]
+    },
+
+    "traiteur": {
+        "intro": "Présentez vos menus, vos prestations et permettez à vos clients de demander facilement un devis en ligne.",
+        "fonctionnalites": [
+            "Présentation des menus",
+            "Demande de devis",
+            "Galerie photos",
+            "Google Maps",
+            "Contact"
+        ]
+    },
+
+    "photographe": {
+        "intro": "Exposez votre portfolio et facilitez la prise de rendez-vous grâce à un site internet professionnel.",
+        "fonctionnalites": [
+            "Portfolio",
+            "Galerie photos",
+            "Réservation",
+            "Contact",
+            "Avis clients"
+        ]
+    },
+
+        "architecte": {
+        "intro": "Présentez vos réalisations, vos domaines d'expertise et permettez à vos futurs clients de découvrir votre savoir-faire grâce à un site internet professionnel.",
+        "fonctionnalites": [
+            "Présentation des projets",
+            "Galerie photos",
+            "Formulaire de contact",
+            "Google Maps",
+            "Avis clients"
+        ]
+    },
+
+    "notaire": {
+        "intro": "Présentez votre étude, vos domaines d'intervention et facilitez la prise de rendez-vous avec un site internet professionnel.",
+        "fonctionnalites": [
+            "Présentation des services",
+            "Prise de rendez-vous",
+            "Formulaire sécurisé",
+            "Google Maps",
+            "Informations pratiques"
+        ]
+    },
+
+    "expert-comptable": {
+        "intro": "Développez votre visibilité et présentez vos missions grâce à un site internet clair, moderne et rassurant.",
+        "fonctionnalites": [
+            "Présentation des prestations",
+            "Prise de rendez-vous",
+            "Formulaire de contact",
+            "Google Maps",
+            "Espace client"
+        ]
+    },
+
+    "médecin": {
+        "intro": "Informez vos patients et simplifiez la prise de rendez-vous grâce à un site internet professionnel adapté à votre cabinet.",
+        "fonctionnalites": [
+            "Présentation du cabinet",
+            "Prise de rendez-vous",
+            "Informations pratiques",
+            "Google Maps",
+            "Contact"
+        ]
+    },
+
+    "dentiste": {
+        "intro": "Présentez votre cabinet, vos soins et facilitez la prise de rendez-vous avec un site internet moderne.",
+        "fonctionnalites": [
+            "Présentation des soins",
+            "Prise de rendez-vous",
+            "Informations pratiques",
+            "Google Maps",
+            "Contact"
+        ]
+    },
+
+        "kinésithérapeute": {
+        "intro": "Présentez votre cabinet, vos spécialités et simplifiez la prise de rendez-vous grâce à un site internet professionnel.",
+        "fonctionnalites": [
+            "Présentation des soins",
+            "Prise de rendez-vous",
+            "Informations pratiques",
+            "Google Maps",
+            "Contact"
+        ]
+    },
+
+    "psychologue": {
+        "intro": "Présentez votre approche thérapeutique et permettez à vos futurs patients de vous contacter en toute simplicité.",
+        "fonctionnalites": [
+            "Présentation du cabinet",
+            "Prise de rendez-vous",
+            "Formulaire de contact",
+            "Google Maps",
+            "Informations pratiques"
+        ]
+    },
+
+    "coach sportif": {
+        "intro": "Développez votre clientèle grâce à un site internet mettant en avant vos accompagnements, vos programmes et vos résultats.",
+        "fonctionnalites": [
+            "Présentation des programmes",
+            "Réservation",
+            "Galerie photos",
+            "Avis clients",
+            "Contact"
+        ]
+    },
+
+    "agent immobilier": {
+        "intro": "Présentez vos biens immobiliers et facilitez les demandes de renseignements grâce à un site internet moderne.",
+        "fonctionnalites": [
+            "Présentation des biens",
+            "Formulaire de contact",
+            "Google Maps",
+            "Galerie photos",
+            "Avis clients"
+        ]
+    },
+
+    "artisan": {
+        "intro": "Valorisez votre savoir-faire et présentez vos prestations grâce à un site internet professionnel adapté à votre activité.",
+        "fonctionnalites": [
+            "Présentation des prestations",
+            "Demande de devis",
+            "Galerie photos",
+            "Google Maps",
+            "Contact"
+        ]
+    },
+
+    "entreprise": {
+        "intro": "Renforcez votre présence en ligne avec un site internet professionnel qui présente votre entreprise, vos services et vos valeurs.",
+        "fonctionnalites": [
+            "Présentation de l'entreprise",
+            "Présentation des services",
+            "Formulaire de contact",
+            "Google Maps",
+            "Avis clients"
+        ]
+    },
 
 }    
 
