@@ -57,6 +57,13 @@ METIERS = [
     "agent immobilier",
     "artisan",
     "entreprise"
+    "coach nutritionnel",
+    "rééquilibrage alimentaire",
+    "hébergement touristique",
+    "gîte",
+    "chalet",
+    "chambre d'hôtes",
+    "étang de pêche"
 
 ]
 
@@ -382,6 +389,83 @@ CONTENUS_METIERS = {
             "Formulaire de contact",
             "Google Maps",
             "Avis clients"
+        ]
+    },
+
+    "coach nutritionnel": {
+        "intro": "Développez votre activité grâce à un site internet professionnel présentant vos accompagnements, vos programmes nutritionnels et vos prestations personnalisées.",
+        "fonctionnalites": [
+            "Présentation des accompagnements",
+            "Prise de rendez-vous",
+            "Formulaire de contact",
+            "Avis clients",
+            "Blog conseils nutrition"
+        ]
+    },
+
+    "rééquilibrage alimentaire": {
+        "intro": "Présentez votre méthode de rééquilibrage alimentaire et permettez à vos futurs clients de découvrir vos programmes personnalisés.",
+        "fonctionnalites": [
+            "Présentation des programmes",
+            "Prise de rendez-vous",
+            "Blog nutrition",
+            "Avis clients",
+            "Contact"
+        ]
+    },
+
+    "hébergement touristique": {
+        "intro": "Présentez votre établissement, vos hébergements et vos services afin d'attirer davantage de voyageurs grâce à un site internet professionnel.",
+        "fonctionnalites": [
+            "Galerie photos",
+            "Réservation",
+            "Calendrier des disponibilités",
+            "Google Maps",
+            "Contact"
+        ]
+    },
+
+    "gîte": {
+        "intro": "Mettez en valeur votre gîte avec un site internet permettant aux visiteurs de découvrir les lieux et de réserver facilement leur séjour.",
+        "fonctionnalites": [
+            "Galerie photos",
+            "Calendrier des disponibilités",
+            "Réservation",
+            "Google Maps",
+            "Contact"
+        ]
+    },
+
+    "chalet": {
+        "intro": "Valorisez votre chalet grâce à un site internet présentant les équipements, les activités à proximité et les disponibilités.",
+        "fonctionnalites": [
+            "Galerie photos",
+            "Calendrier des disponibilités",
+            "Réservation",
+            "Google Maps",
+            "Contact"
+        ]
+    },
+
+    "chambre d'hôtes": {
+        "intro": "Présentez vos chambres d'hôtes et simplifiez les réservations grâce à un site internet moderne et accueillant.",
+        "fonctionnalites": [
+            "Présentation des chambres",
+            "Galerie photos",
+            "Réservation",
+            "Google Maps",
+            "Contact"
+        ]
+    },
+
+    "étang de pêche": {
+        "intro": "Présentez votre étang de pêche, les espèces présentes, les tarifs et les services proposés afin d'attirer de nouveaux pêcheurs.",
+        "fonctionnalites": [
+            "Présentation du site",
+            "Tarifs",
+            "Galerie photos",
+            "Google Maps",
+            "Réservation"
         ]
     }
 
