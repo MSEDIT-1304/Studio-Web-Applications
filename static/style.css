@@ -757,12 +757,7 @@ footer{
 
 }
 
-.liste-metiers a:hover{
 
-    color:#ffffff;
-    text-decoration:underline;
-
-}
 @media (max-width:900px){
 
     .liste-metiers{
