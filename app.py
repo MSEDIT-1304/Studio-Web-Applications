@@ -506,7 +506,8 @@ def services():
 
 @app.route("/realisations")
 def parcours():
-    return render_template("realisations.html")
+    return render_template("realisations.html",metiers=METIERS)
+    
 
 
 @app.route("/contact")
