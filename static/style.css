@@ -711,45 +711,49 @@ footer{
    Votre métier
 ========================== */
 
-.metiers-card{
 
-    max-width:960px;
-    margin:55px auto;
-    padding:42px;
-
-    background:linear-gradient(to bottom,#111,#1a1a1a);
-
-    border:1px solid rgba(200,162,74,.30);
-
-    border-radius:14px;
-
-    box-shadow:0 16px 45px rgba(0,0,0,.40);
-
-}
-
-.metiers-card p{
-
-    text-align:center;
-    line-height:1.8;
-    margin-bottom:30px;
-
-}
 
 .liste-metiers{
 
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:12px 20px;
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:14px 35px;
+
+    margin-top:30px;
 
 }
 
 .liste-metiers a{
 
+    display:block;
+
     color:#d7b66a;
+
     text-decoration:none;
+
+    text-align:left;
+
     font-size:15px;
-    transition:.25s;
+
+    font-weight:500;
+
+}
+
+.liste-metiers a::before{
+
+    content:"› ";
+
+    color:#d7b66a;
+
+}
+
+.liste-metiers a:hover{
+
+    color:#ffffff;
+
+    text-decoration:underline;
 
 }
 
@@ -757,5 +761,14 @@ footer{
 
     color:#ffffff;
     text-decoration:underline;
+
+}
+@media (max-width:900px){
+
+    .liste-metiers{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
 
 }
