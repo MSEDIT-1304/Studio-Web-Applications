@@ -9,6 +9,7 @@ stripe.api_key = os.environ.get("STRIPE_SECRET_KEY")
 
 PRIX = {
 
+    "frais199": ("Site vitrine standard", 199),
     "site550": ("Site vitrine Essentiel", 550),
     "site750": ("Site vitrine Premium", 750),
     "application2500": ("Application web personnalisée", 2500)
