@@ -859,3 +859,20 @@ footer{
     margin: 20px auto !important;
     }
 }
+/* PRESENTATION SUR MOBILE */
+@media screen and (max-width: 900px) {
+
+    .presentation-texte {
+        font-size: 14px !important;
+        line-height: 1.8 !important;
+        text-align: justify !important;
+        color: #ffffff !important;
+        width: 100% !important;
+        box-sizing: border-box;
+    }
+
+    .presentation-texte br {
+        display: none;
+    }
+
+}
