@@ -814,7 +814,7 @@ footer{
     }
 
     /* Présentation */
-    .contenu > .presentation p {
+    #accueil .presentation p {
     max-width: 850px;
     margin: 0 auto;
     font-size: 17px !important;
