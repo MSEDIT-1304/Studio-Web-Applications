@@ -815,10 +815,11 @@ footer{
 
     /* Présentation */
     .contenu > .presentation p {
-    max-width: 760px;
+    max-width: 850px;
     margin: 0 auto;
-    font-size: 20px !important;
+    font-size: 23px !important;
     line-height: 1.8;
+    font-weight: 400;
     text-align: center;
     }
 
