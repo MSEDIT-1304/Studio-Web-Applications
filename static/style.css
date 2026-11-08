@@ -942,3 +942,31 @@ footer{
     }
 
 }
+/* INTRODUCTION PAGE SERVICES */
+
+/* PC */
+@media screen and (min-width: 769px) {
+    .intro-services {
+        font-size: 17px !important;
+        line-height: 1.7 !important;
+        text-align: center !important;
+        font-weight: 400 !important;
+        color: #ffffff !important;
+        max-width: 1100px !important;
+        margin: 20px auto !important;
+    }
+}
+
+/* MOBILE */
+@media screen and (max-width: 768px) {
+    .intro-services {
+        font-size: 14px !important;
+        line-height: 1.6 !important;
+        text-align: center !important;
+        font-weight: 400 !important;
+        color: #ffffff !important;
+        width: 100% !important;
+        box-sizing: border-box;
+        margin: 20px auto !important;
+    }
+}
