@@ -192,70 +192,138 @@ details[open] summary {
     line-height: 1.8;
 }
 
-/* ===========================
-   Cartes des prestations
-=========================== */
+/* =====================================
+   NOUVELLE GRILLE TARIFAIRE
+===================================== */
 
-.offres{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:30px;
-    margin-top:35px;
+.offres {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 28px;
+    max-width: 760px;
+    margin: 40px auto;
 }
 
-.offre{
-    background:linear-gradient(to bottom,#141414,#1d1d1d);
-    border:1px solid rgba(200,162,74,.35);
-    border-radius:12px;
-    padding:28px;
-    box-shadow:0 10px 30px rgba(0,0,0,.35);
-    transition:.30s;
-    display:flex;
-    flex-direction:column;
+.offre {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 30px;
+    text-align: left;
+    color: #f5f5f5;
+    background: linear-gradient(to bottom, #141414, #1d1d1d);
+    border: 1px solid rgba(200,162,74,.45);
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.35);
+    display: flex;
+    flex-direction: column;
+    transition: .3s;
 }
 
-.offre:hover{
-    transform:translateY(-4px);
-    border-color:#c8a24a;
-    box-shadow:0 18px 45px rgba(0,0,0,.50);
+.offre:hover {
+    transform: translateY(-4px);
+    border-color: #d7b66a;
+    box-shadow: 0 18px 45px rgba(0,0,0,.50);
 }
 
-.offre h4{
-    text-align:center;
-    color:#d7b66a;
-    font-size:20px;
-    font-weight:700;
-    margin:0 0 8px;
-    letter-spacing:0.2px;
+/* TITRES DES OFFRES */
+
+.offre h4 {
+    color: #d7b66a;
+    font-size: 23px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.4;
+    margin: 0 0 18px;
 }
 
-.prix{
-    text-align:center;
-    font-size:20px;
-    font-weight:700;
-    color:#ffffff;
-    margin:15px 0 22px;
-    letter-spacing:0.5px;
+/* TEXTES ET TARIFS */
+
+.offre p {
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 1.7;
+    text-align: left;
+    margin: 8px 0;
 }
 
-.offre ul{
-    list-style:none;
-    margin:0;
-    padding:0;
+.offre > p:first-of-type {
+    font-size: 16px;
+    line-height: 1.6;
 }
 
-.offre li{
-    padding:8px 0;
-    border-bottom:1px solid rgba(255,255,255,.08);
+.offre em {
+    color: #d7d7d7;
 }
 
-.offre p{
-    line-height:1.8;
-    text-align:left;
+/* LISTES DES PRESTATIONS */
+
+.offre ul {
+    list-style: disc;
+    padding-left: 22px;
+    margin: 15px 0 25px;
 }
 
-.offre button{
-    margin-top:auto;
+.offre li {
+    color: #f5f5f5;
+    font-size: 15px;
+    line-height: 1.7;
+    padding: 7px 0;
+    border-bottom: none;
+}
+
+.offre li strong {
+    color: #d7b66a;
+}
+
+/* BOUTONS DE DEVIS */
+
+.offre > a {
+    display: block;
+    text-decoration: none;
+    margin-top: auto;
+    text-align: center;
+}
+
+.offre button {
+    margin: 20px auto 0;
+    min-width: 210px;
+    padding: 12px 24px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/* ADAPTATION MOBILE */
+
+@media screen and (max-width: 768px) {
+
+    .offres {
+        grid-template-columns: 1fr;
+        max-width: 100%;
+        margin: 25px auto;
+        gap: 22px;
+    }
+
+    .offre {
+        padding: 22px 18px;
+    }
+
+    .offre h4 {
+        font-size: 19px;
+    }
+
+    .offre p {
+        font-size: 14px;
+    }
+
+    .offre li {
+        font-size: 14px;
+    }
+
+    .offre button {
+        width: 100%;
+        max-width: 260px;
+    }
+
 }
 
 #accueil,
@@ -448,9 +516,7 @@ button:hover{
 button:active{
     transform:translateY(1px);
 }
-.offres{
-    grid-template-columns:1fr;
-}
+
 .service h3{
     font-size:22px;
     line-height:1.3;
