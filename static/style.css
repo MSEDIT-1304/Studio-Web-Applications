@@ -817,8 +817,8 @@ footer{
     .contenu > .presentation p {
     max-width: 850px;
     margin: 0 auto;
-    font-size: 23px !important;
-    line-height: 1.8;
+    font-size: 17px !important;
+    line-height: 1.7;
     font-weight: 400;
     text-align: center;
     }
