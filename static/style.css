@@ -913,34 +913,37 @@ footer{
     }
 
 }
-/* TEXTE PRESENTATION — MEME TAILLE QUE LES CADRES */
-#accueil .presentation p {
-    font-family: Arial, sans-serif !important;
-    font-size: 17px !important;
-    font-weight: 400 !important;
-    line-height: 1.7 !important;
-    color: #ffffff !important;
-    text-align: center !important;
-    max-width: 1100px !important;
-    margin: 20px auto !important;
+/* TEXTE ACCUEIL — PC ET MOBILE */
+
+/* PC */
+@media screen and (min-width: 901px) {
+    .presentation-texte {
+        font-size: 17px !important;
+        line-height: 1.7 !important;
+        font-weight: 400 !important;
+        color: #ffffff !important;
+        text-align: center !important;
+        max-width: 1100px !important;
+        margin: 20px auto !important;
     }
 }
-/* PRESENTATION SUR MOBILE */
-@media screen and (max-width: 900px) {
 
+/* MOBILE */
+@media screen and (max-width: 900px) {
     .presentation-texte {
         font-size: 14px !important;
-        line-height: 1.8 !important;
-        text-align: justify !important;
+        line-height: 1.6 !important;
+        font-weight: 400 !important;
         color: #ffffff !important;
+        text-align: center !important;
         width: 100% !important;
         box-sizing: border-box;
+        margin: 20px auto !important;
     }
 
     .presentation-texte br {
         display: none;
     }
-
 }
 /* INTRODUCTION PAGE SERVICES */
 
