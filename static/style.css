@@ -847,3 +847,15 @@ footer{
     }
 
 }
+/* TEXTE DE PRESENTATION — PC */
+@media screen and (min-width: 901px) {
+
+    .presentation p {
+        font-size: 17px !important;
+        line-height: 1.7 !important;
+        max-width: 760px !important;
+        margin: 20px auto !important;
+        text-align: center !important;
+    }
+
+}
