@@ -813,14 +813,13 @@ footer{
         text-align: center;
     }
 
-    /* Présentation */
-    #accueil .presentation p {
-    max-width: 850px;
-    margin: 0 auto;
-    font-size: 17px !important;
-    line-height: 1.7;
-    font-weight: 400;
-    text-align: center;
+    /* Textes blancs presentation */
+    .avantage p {
+        max-width: 420px;
+        margin: 0 auto;
+        font-size: 17px !important;
+        line-height: 1.7;
+        text-align: center;
     }
 
     /* Titre Pourquoi choisir */
