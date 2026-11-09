@@ -994,5 +994,11 @@ footer{
     }
 
 }
+/* AGRANDIR LES ONGLETS DU MENU — PC UNIQUEMENT */
+@media screen and (min-width: 769px) {
+    .navbar a {
+        font-size: 18px !important;
+    }
+}
 
 
