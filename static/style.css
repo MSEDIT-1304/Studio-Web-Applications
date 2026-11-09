@@ -973,3 +973,43 @@ footer{
         margin: 20px auto !important;
     }
 }
+
+/* AGRANDISSEMENT DES TEXTES — PAGE RÉALISATIONS UNIQUEMENT */
+
+/* PC */
+@media screen and (min-width: 769px) {
+
+    .realisations .service p:not(.slogan) {
+        font-size: 17px !important;
+        line-height: 1.8 !important;
+    }
+
+    .realisations .service li {
+        font-size: 17px !important;
+        line-height: 1.8 !important;
+    }
+
+    .realisations .service a {
+        font-size: 17px !important;
+    }
+
+}
+
+/* MOBILE */
+@media screen and (max-width: 768px) {
+
+    .realisations .service p:not(.slogan) {
+        font-size: 15px !important;
+        line-height: 1.7 !important;
+    }
+
+    .realisations .service li {
+        font-size: 15px !important;
+        line-height: 1.7 !important;
+    }
+
+    .realisations .service a {
+        font-size: 15px !important;
+    }
+
+}
